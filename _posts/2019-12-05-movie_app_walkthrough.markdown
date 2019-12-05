@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Movie App Walkthrough"
-date:       2019-12-05 20:42:56 +0000
+date:       2019-12-05 15:42:57 -0500
 permalink:  movie_app_walkthrough
 ---
 
