@@ -31,7 +31,7 @@ require_relative "moviepod/api"
 ```
 
 ### moviepod/lib/moviepod/movie.rb
-This file is the movie object, where Ruby will know what the movie is about and what attributes it is composed of. How would I know what? That's where I look into the api website and research what data it can provide to the developer:
+This file is the movie object, where Ruby will know what the movie is about and what attributes it is composed of. How would I know what? That's where I look into the api website and research what pertinent data is crutial that can be provided to the user:
 
 ```
 class MoviePod::Movie 
@@ -60,7 +60,7 @@ end
 
 Choosing which one is solely depends on you to decide what information is relevant or not, but for this project I have thought these are the most important one to provide some info about the movie such as its name(title), overview(not to totally spoil the movie ;D), budget, and release date. 
 
-The ID is primarily important which will be explained in the api file below: 
+The ID is primarily important which will be explained all the way at the end! for now, read on...
 
 
 
@@ -176,7 +176,7 @@ and the version is nothing but the version of the app you decide. For example, i
 
 **AND Finally...**
 
-here comes the bin. The bin folder contains nothing but executable file, in this case i named it "run" with no file extension. Inside, I use the famous 'shebang' line to tell the intrepreter that what I use is ruby. Take a look below:
+here comes the bin!! The bin folder contains nothing but instructions executable instructions, in this case i named it "run" with no file extension. Inside, I use the famous 'shebang' line to tell the intrepreter that what I am using in my environment is ruby. Take a look below:
 ```
 
 #!/usr/bin/env ruby
@@ -187,17 +187,17 @@ MoviePod::CLI.new.call
 
 ```
 
-The require_relative is a way to execute files that are within my project internal files (api,cli,moviepod inside the lib), and require is used for dependacies in external files such as gemfiles. In this context, I am executing my environment file and also creating a new cli object everytime I execute the file.
+The require_relative is a way to execute files that are within my project internal files (api,cli,moviepod inside the lib), and require is used for dependacies such as external or gemfiles. In this context, I am executing my environment file and also creating a new cli object everytime I execute the file.
 
 
 
 **Challenges**
 
-A challenge to start from an empty page sounds overwhelming, but with a little bit of setting a plan of what you want from the api that you feel useful for your own project, how to structure your files to do what each are supposed to do, and testing bugs to find where the logic might be wrong were some of those challenges that I overcame by looking at the videos, walkthroughs, and collaborating and communicating with my team made a huge different as one of the greatest lesson I learnt so far is "as much as software development requires independent and creative thinking, it is also more than essentials that you get involved with your teammates as software engineering field requires teamwork for most part and make it more fun. 
+A challenge to start from an empty page sounds overwhelming, but with a little bit of setting a plan of what you want from the api that you feel useful for your own project and users, how to structure your files to do what each are supposed to do, and testing bugs to find where the logic might go wrong were some of those challenges that I overcame by looking at the videos, walkthroughs, and collaborating and communicating with my team. It made a huge difference as one of the greatest lesson I learnt so far is "as much as software development requires independent and creative thinking, it is also more than essentials that you get involved with your teammates as software engineering field requires teamwork for most part and make it more fun. 
 
 **Future Challenges
 
-Remember about movie ID, one of my object attributes? well, what I have found out is that not all api data endpoints have all the data you need to pull information from. Sometimes, that company or website divided their api endpoint in a way that you need to utilize different api in order to achieve a result you want in your object. 
+Remember about movie ID, one of my object attributes I ? well, what I have found out is that not all api data endpoints have all the data you need to pull information from. Sometimes, that company or website divided their api endpoint in a way that you need to utilize different api in order to achieve a result you want in your object. 
 That movie ID, in the filed of database, is called a primary key, an attribute that is shared among all other data endpoint. My future challenge is, if i need the name of the actors in that film to put it in my own project, because movie ID is a shared data, or a bridge data between these two api, I can now compare the user input result that called a method from the first api to the second api, and then I can able to get information I need from the second api. 
 
 I hope this walkthrough and insights can help you clarify how powerful the api are and design patterns that can be taken to make your app more user friendly. 
