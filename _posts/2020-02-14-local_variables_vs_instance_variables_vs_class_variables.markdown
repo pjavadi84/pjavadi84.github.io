@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Local Variables vs. Instance Variables vs. Class Variables"
-date:       2020-02-14 23:27:58 +0000
+date:       2020-02-14 18:27:59 -0500
 permalink:  local_variables_vs_instance_variables_vs_class_variables
 ---
 
