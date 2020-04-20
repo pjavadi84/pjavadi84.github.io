@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Event Planner: Simple RoR app"
-date:       2020-04-20 05:02:25 +0000
+date:       2020-04-20 01:02:26 -0400
 permalink:  event_planner_simple_ror_app
 ---
 
